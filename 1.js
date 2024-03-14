@@ -7,4 +7,23 @@
 который получаем от функции, в консоль.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log("Результат:");
+const number = inputVariable("Введите число");
+if (number != 0) {
+    console.log(number ** 3);
+} else 
+console.log("Введите число не равное '0'");
+
+function inputNumber(data) {
+    return prompt(data);
+}
+
+function inputVariable(data) {
+    while (true) {
+        let number = inputNumber(data);
+        if (!isNaN(number)) {
+            return +number;
+        }
+        console.log("Ошибка, введите число!");
+    }
+}
