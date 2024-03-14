@@ -10,4 +10,16 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log("Задание 3:");
+const num1 = inputVariable("Введите число 1");
+const num2 = inputVariable("Введите число 2");
+const num3 = inputVariable("Введите число 3");
+
+const numArray = [num1, num2, num3];
+const maxNum = (a) =>
+    console.log(
+        `Максимальное значение среди чисел ${a} равно ${Math.max(...a)}.`
+    );
+
+maxNum(numArray);
+console.log("-------------------------------------");
