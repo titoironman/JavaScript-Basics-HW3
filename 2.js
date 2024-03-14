@@ -9,4 +9,25 @@
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+console.log("Задание 2:");
+const salary = inputVariable("Введите число");
+if (number != 0) {
+    console.log(`Размер заработной платы за вычетом налогов равен ${number - number*0.13}`);
+} else 
+console.log("Введите число не равное '0'");
+
+console.log("-------------------------------------");
+
+function inputNumber(data) {
+    return prompt(data, "").replace(",", ".");
+}
+
+function inputVariable(data) {
+    while (true) {
+        const number = inputNumber(data);
+        if (!isNaN(number)) {
+            return +number;
+        }
+        console.log("Ошибка, введите число!");
+    }
+}
