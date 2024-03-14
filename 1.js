@@ -7,6 +7,8 @@
 который получаем от функции, в консоль.
 */
 
+
+
 console.log("Задание 1:");
 const number = inputVariable("Введите число");
 if (number != 0) {
